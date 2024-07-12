@@ -12,12 +12,16 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text("Welcome to flutter"),
-                    SizedBox(height: 20,),
-                    ElevatedButton(onPressed: (){}, child: Text("click me"))
-          
-          ],),),
-          drawer: Drawer(),
+          children: [
+            Text("Welcome to flutter"),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(onPressed: () {}, child: Text("click me"))
+          ],
+        ),
+      ),
+      drawer: Drawer(),
     );
   }
 }
