@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter_first_vs/Pages/HomePage.dart';
+import 'package:flutter_first_vs/Pages/HomePage.dart';
 import 'package:flutter_first_vs/Pages/LoginPage.dart';
-//import 'package:flutter_first_vs/Utils/Routes.dart';
+import 'package:flutter_first_vs/Utils/Routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.amber),
       //initialRoute: "/login",
       home: const LoginPage(),
-      //routes: {
-        //MyRoutes.homeRoute: (context) => const HomePage(),
-        //MyRoutes.loginRoute: (context) => const LoginPage(),
+      routes: {
+        MyRoutes.homeRoute: (context) => const HomePage(),
+        MyRoutes.loginRoute: (context) => const LoginPage(),
       },
     );
   }
